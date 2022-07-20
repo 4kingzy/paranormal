@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ivan Turković Krnjak - Stručnjak za paranormalno</title>
+        <link rel="stylesheet" href="para.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=Red+Rose:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <!--headline-->
+
+        <section id="headline">
+            <div class="banner-text">
+                <h1>Ivan Turkovic Krnjak</h1>
+                <p>Paranormal Expert & Investigator</p>
+                <div class="banner-btn">
+                    <a href="#" class="banner-btn-1">Find Out</a>
+                    <a href="#" class="banner-btn-2">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!--navigation-->
+
+        <nav id="navigation">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="#">MEET ME</a></li>                
+            </ul>        
+        </nav>
+        <div id="menu">
+            <img src="slike_final/menu.png" id="MenuBtn">
+        </div>
+        <script>
+            var menu = document.getElementById("menu")
+            var navigation = document.getElementById("navigation")
+            var MenuBtn = document.getElementById("MenuBtn")
+        
+            navigation.style.right == "-250px";
+        
+            menu.onclick = function(){
+                if(navigation.style.right == "-250px"){
+                    navigation.style.right = "0";
+                    MenuBtn.src = "slike_final/close.png";
+                }
+                else {
+                    navigation.style.right = "-250px";
+                    MenuBtn.src = "slike_final/menu.png";
+                }
+            }
+        </script>
+
+        <!--features-->
+
+        <section id="features">
+            <div class="logo-feat">                
+                <h4>FEATURES<h4>
+                <p>Why Choose Me<p>
+            </div>
+            <div class="feature-all">
+                <div class="feature-left">
+                    <h1>Experience on the Field</h1>
+                    <div class="feature-left-1">
+                        <div class="feature-left-1-icon"></div>
+                        <div class="feature-left-1-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad illo nobis quo pariatur distinctio expedita tenetur velit!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-img">
+                    <img src="slike_final/o-turkiju.png" class="o-turkiju">
+                </div>
+            </div>
+        </section>
+    
+    
+    </body>
+</html>
