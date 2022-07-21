@@ -131,8 +131,11 @@ nav ul li a{
 .feature-left {
     flex-basis: 50%;     
     width: 150px;
-    padding: 20px;
+    padding: 5px;
     background-color: #fff;
+    border-radius: 10px;
+    border: black solid 3px;
+    box-shadow: 10px 10px 15px black;
 }
 .feature-img {
     flex-basis: 50%;
@@ -141,4 +144,27 @@ nav ul li a{
 .feature-img img {
     width: 70%;
     border-radius: 10px;
+}
+.feature-left h1 {
+    text-align: left;
+    margin-bottom: 15px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+.feature-left-1 {
+    display: flex;
+    margin-bottom: 40px;
+}
+.feature-left-1-icon .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: black;
+    border: 1px solid black;
+}
+.feature-left-1-text p{
+    text-align: initial;
+    padding: 0 20px;
 }
