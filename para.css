@@ -50,7 +50,7 @@
 
 #navigation {
     position: fixed;
-    
+    z-index: 1;
     transition: 0.4s;
     top: 0;
     right:0;
@@ -81,7 +81,7 @@ nav ul li a{
     position: fixed;
     top: 35px;
     right: 17px;
-    z-index: 2;
+    z-index: 5;
     cursor: pointer;
 }
 
@@ -167,12 +167,19 @@ nav ul li a{
     border: 1px solid black;
 }
 .feature-left-1-text p{
+    font-family: 'Roboto', sans-serif;
     text-align: initial;
     padding: 0 20px;
 }
 
 /*SERVICES*/
 
+#services {
+    
+    background-image:url(slike_final/mrlje.jpg);
+    background-size: cover;
+    background-position: center;
+}
 .logo-serv {
     text-align: center;
     padding-top: 50px;
@@ -189,4 +196,208 @@ nav ul li a{
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
     color: black;
+}
+.service-box {
+    width: 90%;
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.case {
+    flex-basis: 27%;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    color: #fff;  
+    position: relative;
+}
+.case img {
+    
+    width: 100%;
+    border-radius: 8px; 
+    
+}
+.overlay{
+    
+    width: 100%;
+    height: 99.2%;
+    position: absolute;
+    top: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 253, 253, 1));
+    opacity: 0;
+    transition: 1s;
+}
+.case:hover .overlay{
+    opacity: 1;
+}
+
+.case-description {
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 1s;
+}
+.case-description h3 {
+    color: black;
+}
+.case-description p {
+    color: black;
+}
+hr {
+    background: black;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.case:hover .case-description {
+    opacity: 1;
+    bottom: 20%;
+}
+
+/*TESTIMONIALS*/
+.logo-test {
+    text-align: center;
+    padding-top: 50px;
+}
+.logo-test h4 {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 25px;
+}
+.logo-test p {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+.clients {
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    width: 88%;
+    flex-wrap: wrap;
+    margin: 30px;
+    align-items: center;
+}
+.mario {
+    margin-top: 50px;
+    flex-basis: 27%;
+    padding: 15px;
+    box-shadow: 7px 7px 20px 3px rgb(0,0,0, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.6s;
+   
+    
+}
+.mario img{
+    width: 40px;
+    padding: 6px;
+    border-radius: 2px;
+}
+.bekafigo {
+    margin-top: 50px;
+    flex-basis: 27%;
+    padding: 15px; 
+    box-shadow: 7px 7px 20px 3px rgb(0,0,0, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.bekafigo img{
+    width: 40px;
+    border-radius: 2px;
+    padding: 6px;
+}
+.maja {
+    margin-top: 50px;
+    flex-basis: 27%;
+    padding: 15px;
+    box-shadow: 7px 7px 20px 3px rgb(0,0,0, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.maja img{
+    width: 40px;
+    border-radius: 2px;
+    padding: 6px;
+}
+.mario-name {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+}
+.mario-name h3 {
+    margin-top: 15px;
+}
+.mario-name i {
+    margin-top: 17px;
+}
+.mario hr {
+    background: black;
+    height: 1px;
+    border: 0;
+    margin: 5px auto;
+    width: 95%;
+}
+.bekafigo-name {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 65%;
+}
+.bekafigo-name h3 {
+    margin-top: 15px;
+}
+.bekafigo-name i {
+    margin-top: 17px;
+}
+.bekafigo hr {
+    background: black;
+    height: 1px;
+    border: 0;
+    margin: 5px auto;
+    width: 95%;
+}
+.maja-name {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 55%;
+}
+.maja-name h3 {
+    margin-top: 15px;
+}
+.maja-name i {
+    margin-top: 17px;
+}
+.maja hr {
+    background: black;
+    height: 1px;
+    border: 0;
+    margin: 5px auto;
+    width: 95%;
+}
+
+.mario:hover {
+    transform: translateY(-20%);
+}
+.bekafigo:hover {
+    transform: translateY(-20%);
+}
+.maja:hover {
+    transform: translateY(-20%);
 }
